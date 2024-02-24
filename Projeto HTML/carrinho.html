@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DSCommerce</title>
-
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cart.css">
 </head>
-
 <body>
     <header>
         <nav class="container">
@@ -16,21 +14,58 @@
             <a href="#">Entrar</a>
         </nav>
     </header>
+
     <main>
-        <section id="product-details" class="container">
-            <div class="card">
+        <section id="cart-container" class="container">
+            <div class="card mb20">
                 <div class="cart-item-container line-bottom">
-                    item
+                    
+                    <div class="cart-item-left">
+                        <img src="images/computer.png" alt="computer">
+                        
+                        <div class="cart-item-description">
+                            <h3>Computador Gamer XT</h3>
+                            
+                            <div class="cart-item-quantity-container">
+                                <div class="cart-item-quantity-btn">-</div>
+                                <p>1</p>
+                                <div class="cart-item-quantity-btn">+</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-item-right">
+                        R$ 5.000,00
+                    </div>
                 </div>
+
                 <div class="cart-item-container line-bottom">
-                    item
+                    
+                    <div class="cart-item-left">
+                        <img src="images/computer.png" alt="computer">
+                        
+                        <div class="cart-item-description">
+                            <h3>Computador Gamer XT</h3>
+                            
+                            <div class="cart-item-quantity-container">
+                                <div class="cart-item-quantity-btn">-</div>
+                                <p>1</p>
+                                <div class="cart-item-quantity-btn">+</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-item-right">
+                        R$ 5.000,00
+                    </div>
                 </div>
 
                 <div class="cart-total-container">
-                    R$ 15,000,00
+                    <h3>R$ 15,000,00</h3>
                 </div>
             </div>
-            <div class="btn-page-container">
+
+            <div class="btn-container-220">
                 <div class="btn btn-blue">
                     Finalizar pedido
                 </div>
@@ -39,7 +74,6 @@
                 </div>
             </div>
         </section>
-
     </main>
 </body>
 
