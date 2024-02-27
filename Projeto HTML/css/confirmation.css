@@ -1,0 +1,21 @@
+/* Quando importar este css não preciso invocar o style.css */
+@import url("cart.css");
+
+#confirmation-container-section {
+    padding: 20px;
+}
+
+.dsc-confirmation-message {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--dsc-color-font-primary);
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    .dsc-confirmation-message {
+        font-size: 24px;
+        font-weight: 700;
+        text-align: left;
+    }   
+}
