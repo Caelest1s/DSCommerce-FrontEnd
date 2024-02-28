@@ -225,6 +225,12 @@ nav a {
     text-align: center;
 }
 
+@media (min-width: 576px) {
+    .dsc-form h2 {
+        font-size: 24px;
+    }
+}
+
 .dsc-form-controls-container {
     width: 100%;
     display: grid;
@@ -250,13 +256,28 @@ nav a {
 .dsc-form-control::placeholder {
     color: var(--dsc-color-font-placeholder);
 }
-
-@media (min-width: 576px) {
-    .dsc-form h2 {
-        font-size: 24px;
-    }
+/* ----------------------------------------------------------------------------------------------------------------------------> */
+/* select styles, config para alterar a cor e apresentação */
+.dsc-select:invalid {
+    color: var(--dsc-color-font-placeholder);
 }
 
+.dsc-select option[disabled] {
+    display: none;
+}
+
+.dsc-select option {
+    color: var(--dsc-color-font-primary);
+}
+
+.dsc-textarea {
+    resize: none;
+    height: 128px;
+    padding-top: 10px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------> */
+/* message errors */
 .dsc-input-error {
     border: 1px solid var(--dsc-color-error);
 }
